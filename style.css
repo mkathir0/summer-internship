@@ -95,20 +95,20 @@ header p {
   display: flex;
   justify-content: center;
   gap: 1.5rem;
-  flex-wrap: nowrap; /* keep videos side by side */
+  flex-wrap: nowrap; 
 }
 
 .video-wrapper video {
-  width: 600px; /* bigger width */
-  height: auto; /* keep aspect ratio */
+  width: 600px; 
+  height: auto; 
   border-radius: 8px;
   border: 2px solid #2a2a2a;
 }
 
-/* Responsive fallback for smaller screens */
+
 @media (max-width: 1300px) {
   .video-wrapper {
-    flex-wrap: wrap;  /* allow stacking */
+    flex-wrap: wrap;  
     gap: 1rem;
   }
   .video-wrapper video {
@@ -117,6 +117,17 @@ header p {
   }
 }
 
+.blue-line {
+  border: none;
+  height: 2px;
+  background-color: blue;
+}
+
+.spacer {
+  margin-top: 40px; 
+  margin-bottom: 40px;
+  display: inline-block;
+}
 footer {
   margin-top: 4rem;
   padding: 1rem;
